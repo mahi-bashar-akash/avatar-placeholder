@@ -5,7 +5,7 @@
       <img :src="`/svg/justify-left.svg`" class="sidebar-toggle" alt="justify-left" @click="sidebarToggle()">
       <img :src="`/svg/smie.svg`" class="smile" alt="smile">
     </div>
-    <a href="https://github.com/mahibashardeveloper/avatar-placeholder-package" class="github-link">
+    <a href="https://github.com/mahibashardeveloper/avatar-placeholder" class="github-link">
       Code view on github
     </a>
   </div>
