@@ -275,12 +275,6 @@ export default {
       preCode: `
         <template>
 
-            <!-- this code apply in your template code if use api implementation -->
-            <div v-for="each in listData" :key="each.id">
-                  <AvatarPlaceHolder :name="each.firstName+' '+each.secondName+' '+each.thirdName" :size="each.size" :background-color="each.backgroundColor" :text-color="each.textColor" :radius="each.borderRadius"/>
-            </div>
-
-            <!-- if single use-->
             <AvatarPlaceHolder name="Olivia Mia Maeve" size="size-64" background-color="bg-blue" text-color="text-white" radius="rounded-none"/>
 
         </template>
@@ -299,125 +293,6 @@ export default {
       preCodeAvatarBackgroundColor: `<AvatarPlaceHolder background-color="bg-blue"/>`,
       preCodeAvatarTextColor: `<AvatarPlaceHolder text-color="text-blue"/>`,
       preCodeAvatarRadius: `<AvatarPlaceHolder radius="rounded-circle"/>`,
-      listData: [
-        {
-          id: '1',
-          firstName: 'Olivia',
-          secondName: 'Mia',
-          thirdName: 'Maeve',
-          size: 'size-64',
-          backgroundColor: 'bg-blue',
-          textColor: 'text-white',
-          code: `<AvatarPlaceHolder name="Olivia Mia Maeve" size="size-64" background-color="bg-blue" text-color="text-white" radius="rounded-none"/>`
-        },
-        {
-          id: '2',
-          firstName: 'Emma',
-          secondName: 'Ava',
-          thirdName: 'Evalyin',
-          size: 'size-128',
-          backgroundColor: 'bg-indigo',
-          textColor: 'text-white',
-          code: `<AvatarPlaceHolder name="Emma Ava Evalyin" size="size-128" background-color="bg-purple" text-color="text-white" radius="rounded-none"/>`
-        },
-        {
-          id: '3',
-          firstName: 'Charrloti',
-          secondName: 'Luca',
-          size: 'size-256',
-          backgroundColor: 'bg-pink',
-          textColor: 'text-white',
-          code: `<AvatarPlaceHolder name="Charrloti Luca" size="size-256" background-color="bg-pink" text-color="text-white" radius="rounded-none"/>`
-        },
-        {
-          id: '4',
-          firstName: 'Liam',
-          size: 'size-128',
-          backgroundColor: 'bg-red',
-          textColor: 'text-white',
-          code: `<AvatarPlaceHolder name="Liam" size="size-128" background-color="bg-red" text-color="text-white" radius="rounded-none"/>`
-        },
-        {
-          id: '5',
-          firstName: 'Elijah',
-          secondName: 'Unique',
-          size: 'size-64',
-          backgroundColor: 'bg-orange',
-          textColor: 'text-white',
-          code: `<AvatarPlaceHolder name="Elijah Unique" size="size-64" background-color="bg-orange" text-color="text-white" radius="rounded-none"/>`
-        },
-        {
-          id: '6',
-          firstName: 'Kai',
-          secondName: 'Ezira',
-          size: 'size-128',
-          backgroundColor: 'bg-yellow',
-          textColor: 'text-dark',
-          code: `<AvatarPlaceHolder name="Kai Ezira" size="size-128" background-color="bg-yellow" text-color="text-dark" radius="rounded-none"/>`
-        },
-
-        {
-          id: '7',
-          firstName: 'Olivia',
-          secondName: 'Mia',
-          thirdName: 'Maeve',
-          size: 'size-64',
-          backgroundColor: 'bg-green',
-          textColor: 'text-white',
-          borderRadius: 'rounded-circle',
-          code: `<AvatarPlaceHolder name="Olivia Mia Maeve" size="size-64" background-color="bg-green" text-color="text-white" radius="rounded-circle"/>`
-        },
-        {
-          id: '8',
-          firstName: 'Emma',
-          secondName: 'Ava',
-          thirdName: 'Evalyin',
-          size: 'size-128',
-          backgroundColor: 'bg-teal',
-          textColor: 'text-white',
-          borderRadius: 'rounded-circle',
-          code: `<AvatarPlaceHolder name="Emma Ava Evalyin" size="size-128" background-color="bg-teal" text-color="text-white" radius="rounded-circle"/>`
-        },
-        {
-          id: '9',
-          firstName: 'Charrloti',
-          secondName: 'Luca',
-          size: 'size-256',
-          backgroundColor: 'bg-cyan',
-          textColor: 'text-white',
-          borderRadius: 'rounded-circle',
-          code: `<AvatarPlaceHolder name="Charrloti Luca" size="size-256" background-color="bg-cyan" text-color="text-white" radius="rounded-circle"/>`
-        },
-        {
-          id: '10',
-          firstName: 'Liam',
-          size: 'size-128',
-          backgroundColor: 'bg-light',
-          textColor: 'text-dark',
-          borderRadius: 'rounded-circle',
-          code: `<AvatarPlaceHolder name="Liam" size="size-128" background-color="bg-light" text-color="text-dark" radius="rounded-circle"/>`
-        },
-        {
-          id: '11',
-          firstName: 'Elijah',
-          secondName: 'Unique',
-          size: 'size-64',
-          backgroundColor: 'bg-dark',
-          textColor: 'text-white',
-          borderRadius: 'rounded-circle',
-          code: `<AvatarPlaceHolder name="Elijah Unique" size="size-64" background-color="bg-dark" text-color="text-white" radius="rounded-circle"/>`
-        },
-        {
-          id: '12',
-          firstName: 'Kai',
-          secondName: 'Ezira',
-          size: 'size-128',
-          backgroundColor: 'bg-subtle-blue',
-          textColor: 'text-white',
-          borderRadius: 'rounded-circle',
-          code: `<AvatarPlaceHolder name="Kai Ezira" size="size-128" background-color="bg-subtle-blue" text-color="text-white" radius="rounded-circle"/>`
-        },
-      ]
     }
   },
   mounted() {

@@ -1,6 +1,9 @@
 <template>
-  <div :class="size + ' ' + backgroundColor + ' ' + textColor + ' ' + radius + ` avatar `">
+  <div :class="size + ' ' + backgroundColor + ' ' + textColor + ' ' + radius + ` avatar `" v-if="avatar === null">
     {{ nameChange() }}
+  </div>
+  <div :class="size + ' ' + radius + ` avatar`" v-if="avatar !== null">
+    <img :src="avatarFilePath" alt="avatar">
   </div>
 </template>
 
@@ -11,6 +14,10 @@ export default {
     size: {
       type: String,
       default: 'size-32',
+    },
+    avatarFilePath: {
+      type: String,
+      default: null,
     },
     backgroundColor: {
       type: String,
@@ -31,7 +38,9 @@ export default {
   },
   watch: {},
   data() {
-    return {}
+    return {
+      avatar: null
+    }
   },
   mounted() {
 

@@ -1,6 +1,6 @@
 {
   "name": "avatar-placeholder-package",
-  "version": "0.1.0",
+  "version": "0.0.15",
   "description": "this npm package help to implement avatar with name",
   "main": "dist/avatar-placeholder-package.common.js",
   "module": "dist/avatar-placeholder-package.esm.js",
