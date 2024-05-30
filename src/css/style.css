@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+/* --- --- --- declare variable of color --- --- --- */
+
+:root {
+    --blue: #0d6efd;
+    --subtle-blue: #0D6EFD7F;
+    --indigo: #6610f2;
+    --subtle-indigo: #6610F27F;
+    --purple: #6f42c1;
+    --subtle-purple: #6F42C17F;
+    --pink: #d63384;
+    --subtle-pink: #D633847F;
+    --red: #dc3545;
+    --subtle-red: #DC35457F;
+    --orange: #fd7e14;
+    --subtle-orange: #FD7E147F;
+    --yellow: #ffc107;
+    --subtle-yellow: #FFC1077F;
+    --green: #198754;
+    --subtle-green: #1987547F;
+    --teal: #20c997;
+    --subtle-teal: #20C9977F;
+    --cyan: #0dcaf0;
+    --subtle-cyan: #0DCAF07F;
+    --light: #f8f9fa;
+    --white: #ffffff;
+    --dark: #000000;
+    --subtle-dark: #0000007F;
+    --light-gray: rgba(128, 128, 128, 0.7);
+    --gray: rgba(128, 128, 128, 1);
+}
+
+.flex-content {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-wrap: wrap;
+}
+
+.height-300 {
+    height: 300px;
+}
+
+/* --- --- --- avatar center content --- --- --- */
+
+.avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    text-align: center;
+}
+
+/* --- --- --- size of avatar --- --- --- */
+
+.size-32 {
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+}
+
+.size-64 {
+    width: 64px;
+    height: 64px;
+    font-size: 20px;
+}
+
+.size-128 {
+    width: 128px;
+    height: 128px;
+    font-size: 24px;
+}
+
+.size-256 {
+    width: 256px;
+    height: 256px;
+    font-size: 24px;
+}
+
+/* --- --- --- background color of avatar --- --- --- */
+
+.bg-blue {
+    background-color: var(--blue);
+}
+
+.bg-indigo {
+    background-color: var(--indigo);
+}
+
+.bg-purple {
+    background-color: var(--purple);
+}
+
+.bg-pink {
+    background-color: var(--pink);
+}
+
+.bg-red {
+    background-color: var(--red);
+}
+
+.bg-orange {
+    background-color: var(--orange);
+}
+
+.bg-yellow {
+    background-color: var(--yellow);
+}
+
+.bg-green {
+    background-color: var(--green);
+}
+
+.bg-teal {
+    background-color: var(--teal);
+}
+
+.bg-cyan {
+    background-color: var(--cyan);
+}
+
+.bg-light {
+    background-color: var(--light);
+}
+
+.bg-white {
+    background-color: var(--white);
+}
+
+.bg-dark {
+    background-color: var(--dark);
+}
+
+/* --- --- --- opacity background color of avatar --- --- --- */
+
+.bg-subtle-blue {
+    background-color: var(--subtle-blue);
+}
+
+.bg-subtle-indigo {
+    background-color: var(--subtle-indigo);
+}
+
+.bg-subtle-purple {
+    background-color: var(--subtle-purple);
+}
+
+.bg-subtle-pink {
+    background-color: var(--subtle-pink);
+}
+
+.bg-subtle-red {
+    background-color: var(--subtle-red);
+}
+
+.bg-subtle-orange {
+    background-color: var(--subtle-orange);
+}
+
+.bg-subtle-yellow {
+    background-color: var(--subtle-yellow);
+}
+
+.bg-subtle-green {
+    background-color: var(--subtle-green);
+}
+
+.bg-subtle-teal {
+    background-color: var(--subtle-teal);
+}
+
+.bg-subtle-cyan {
+    background-color: var(--subtle-cyan);
+}
+
+.bg-subtle-dark {
+    background-color: var(--subtle-dark);
+}
+
+/* --- --- --- text color of avatar --- --- --- */
+
+.text-blue {
+    color: var(--blue);
+}
+
+.text-indigo {
+    color: var(--indigo);
+}
+
+.text-purple {
+    color: var(--purple);
+}
+
+.text-pink {
+    color: var(--pink);
+}
+
+.text-red {
+    color: var(--red);
+}
+
+.text-orange {
+    color: var(--orange);
+}
+
+.text-yellow {
+    color: var(--yellow);
+}
+
+.text-green {
+    color: var(--green);
+}
+
+.text-teal {
+    color: var(--teal);
+}
+
+.text-cyan {
+    color: var(--cyan);
+}
+
+.text-light {
+    color: var(--light);
+}
+
+.text-white {
+    color: var(--white);
+}
+
+.text-dark {
+    color: var(--dark);
+}
+
+/* --- --- --- rounded --- --- --- */
+
+.rounded-none {
+    border-radius: 0;
+}
+
+.rounded-circle {
+    border-radius: 100%;
+}
